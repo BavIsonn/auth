@@ -247,8 +247,9 @@ body {
 }
 
 .wrapper-inner-body-btn button:hover {
+	background: -webkit-linear-gradient(bottom,#7579ff,#b224ef);
 	background: -moz-linear-gradient(bottom,#7579ff,#b224ef);
-	background: linear-gradient(bottom, #7579ff, #b224ef);
+	background: linear-gradient(to bottom, #7579ff, #b224ef);
 
 	color: #eee;
 }
