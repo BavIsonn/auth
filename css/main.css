@@ -9,6 +9,32 @@ body {
 	font-family: monospace;
 
 	background-color: #eee;
+
+	overflow: hidden;
+}
+
+@keyframes background-anim {
+	from {
+		opacity: 1;
+		background: #eee;
+	}
+
+	to {
+		opacity: .2;
+		background: url(https://colorlib.com/etc/lf/Login_v3/images/bg-01.jpg) no-repeat center; 
+		background-size: cover;
+	}
+}
+
+@keyframes wrapper-anim {
+	from {
+		transform: translateY(100%);
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
 }
 
 .background {
@@ -24,7 +50,9 @@ body {
 	background: url(https://colorlib.com/etc/lf/Login_v3/images/bg-01.jpg) no-repeat center; 
 	background-size: cover;
 
-	opacity: .1;
+	opacity: .2;
+
+	animation: background-anim 1s;
 }
 
 .no-select {
@@ -51,6 +79,8 @@ body {
 	display: flex;
 
 	z-index: 2;
+
+	animation: wrapper-anim 1s;
 }
 
 .wrapper-inner {
