@@ -166,6 +166,10 @@ body {
 	transition: all ease .4s;
 }
 
+.wrapper-inner-body-input input::placeholder {
+	color: #eeeeee96;
+}
+
 .wrapper-inner-body-input input:active {
 	outline: none;
 
