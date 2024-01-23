@@ -4,38 +4,58 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Auth 0.0</title>
-	<link rel="icon" type="image/png" href="key.png">
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="icon" type="image/png" href="img/logo.png">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	<div class="layout_main">
-		<div class="box space">
-			<form class="layout_main">
-				<span class="logo">
-					<i class="logo_icon"></i>
-				</span>
-			<div class="input_layout">
-				<input class="input_item input_iconlog" type="text" name="Username" placeholder="Username">
-				<span class="input_focus"></span>
-				</input>
+
+	<div class="background"></div>
+
+	<div class="wrapper">
+		<div class="container">
+			<div class="wrapper-inner">
+
+				<div class="wrapper-inner-header no-select">
+
+					<div class="wrapper-inner-header-img">
+						<img src="./img/logo.png" draggable="false">
+					</div>
+
+					<div class="wrapper-inner-header-text">
+						Log in
+					</div>
+
+				</div>
+
+				<div class="wrapper-inner-body no-select">
+
+					<div class="wrapper-inner-body-input">
+						<input type="text" placeholder="Enter Username">
+
+						<input type="text" placeholder="Enter Password">
+
+						<div>
+							<span><input type="checkbox" id="checkbox"></span>
+						
+							<label for="checkbox">Remember me</label>
+						</div>
+					</div>
+
+					<div class="wrapper-inner-body-btn">
+						<button>
+							Login
+						</button>
+					</div>
+
+					<div class="wrapper-inner-body-trivia">
+						<a href="#" draggable="false">Forgot Password?</a>
+					</div>
+
+				</div>
+
 			</div>
-			<div class="input_layout">
-				<input class="input_item input_iconpas" type="text" name="Password" placeholder="Password">
-				<span class="input_focus"></span>
-				</input>
-			</div>
-			<div class="checkbox_layout">
-				<input class="chekcbox_item" type="checkbox" name="Remember me?">
-				<label class="checkbox_focus" id="ckb1">Remember me?</laber>
-			</div>
-			<div class="button_layout">
-				<button id="button_item">Login</button>
-			</div>
-			<div class="link_layout">
-				<a href="#" class="link">Forget password?</a>
-			</div>
-			</form>
 		</div>
 	</div>
+
 </body>
 </html>
